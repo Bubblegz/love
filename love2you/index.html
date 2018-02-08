@@ -1,0 +1,140 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<audio id="bgmMusic" src="../music/FlowerDance.mp3" autoplay="autoplay" loop preload="auto" type="audio/mp3"></audio>
+    <title>I LOVE YOU</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="style/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="style/jquery.js"></script>
+    <script type="text/javascript" src="style/garden.js"></script>
+    <script type="text/javascript" src="style/functions.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code" hidden="hidden">
+               <span class="keyword">A Boy name </span> <span class="string">"tao"</span>.<br />
+                <span class="keyword">A Girl name </span> <span class="string">"ying"</span>.<br />
+				<span class="space"/><span class="comments"></span><br />
+				<span class="comments">May 8, 2012,</span><br />
+				<span class="space"/><span class="comments"> Meeting you are the beginning of the story.</span><br />
+                <span class="space"/><span class="comments"> every man is best known to himself,</span><br />
+                <span class="space"/><span class="comments"> action is the antidote to despair,</span><br />
+                <span class="space"/><span class="comments"> so I write some code to show my love to you.</span><br />
+				<span class="keyword"> </span> <br />
+                <span class="comments"> May 8, 2012, We meet in erzhong, </span><br />
+                <br />
+                <span class="comments"> We went in the classroom,and went to the temple to pray for blessing.</span><br />
+               	<br />
+                <span class="comments"> that's  my puppy love.</span><br />
+                <br />
+                <span class="comments"> i really enjoy this kind of life.</span><br />
+                <br />
+                <span class="comments">  ... </span><br />
+				<br />
+                <span class="comments"> ...</span><br />
+				<br />
+                <span class="comments"> ...</span><br />
+                <br />
+                <span class="comments"> May 8, 2012,</span><br />
+				<br/>
+                <span class="comments"> I fell in love with you at the first sight.</span><br />
+				<br/>
+                <span class="placeholder"/><span class="comments">There is truth in what you seem to joke about.</span><br />
+				<br />
+                <span class="placeholder"/><span class="comments"> If you are water, then I am the fish of thirst.</span><br />
+				<br />
+                <span class="placeholder"/><span class="comments">If you are the wind, I am the dandelion that floats with you.</span><br />
+                <br />
+                <span class="placeholder"/><span class="comments"> If you are a floating boat, I am the harbor you can depend on..</span><br />
+                <br />
+                <span class="comments">i want to stretch out my hand every time, you're all around me.</span><br />
+				<br />
+                <span class="comments">Last...,to the world you may be one person,but to one person you may be the world.</span><br />
+				<br />
+                <span class="comments">Liu Haitao is happy at  Valentine's Day！</span><br />
+                <br/>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3712320065678109";
+/* lovead */
+google_ad_slot = "0650322805";
+google_ad_width = 320;
+google_ad_height = 50;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3712320065678109";
+/* lovead */
+google_ad_slot = "0650322805";
+google_ad_width = 320;
+google_ad_height = 50;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+                        Miss Cao, I will have fallen in love with you for
+                        <div id="elapseClock" style="display:none"></div>
+                        <a href='#' id="accept">click me if accept me</a>
+                    </div>
+                    <div id="loveu">
+                        Love u forever and ever.<br/>
+                        <div class="signature">- liu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 10000);
+            
+            $("#accept").click(function(){
+                $(this).hide();
+                $("#elapseClock").show();
+                var together = new Date();
+                timeElapse(together);
+                setInterval(function () {
+                    timeElapse(together);
+                }, 500);
+            })
+            adjustCodePosition();
+			$("#code").removeAttr("hidden");
+            $("#code").typewriter();
+        }
+    </script>
+</body>
+</html>
